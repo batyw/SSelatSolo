@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Resep Selat Solo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 150px 0 50px;
+            background-color: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+        }
+        .page-header h1 {
+            color: var(--accent-color);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            color: var(--white);
+            margin-bottom: 2rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+        .recipes-collection {
+            padding: 4rem 0;
+            background-color: var(--bg-color);
+        }
+        .recipe-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .collection-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+        .collection-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .collection-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-family: var(--font-main);
+        }
+        .collection-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn-play {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .collection-card:hover .btn-play {
+            background-color: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <nav class="navbar scrolled always-scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="color: var(--primary-dark);">Selat Solo</a>
+            <ul class="nav-links">
+                <li><a href="index.html#beranda" style="color: var(--text-dark);">Beranda</a></li>
+                <li><a href="index.html#resep" style="color: var(--text-dark);">Kembali</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar" style="background-color: var(--text-dark);"></span>
+                <span class="bar" style="background-color: var(--text-dark);"></span>
+                <span class="bar" style="background-color: var(--text-dark);"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container reveal">
+            <a href="index.html#resep" class="back-btn">← Kembali ke Halaman Utama</a>
+            <h1>Jelajahi Ragam Varian Resep Selat Solo</h1>
+            <p>Kumpulan sumber video resep Selat Solo terlengkap untuk Anda praktikkan di rumah.</p>
+        </div>
+    </header>
+
+    <main class="recipes-collection">
+        <div class="container">
+            <div class="recipe-list-grid">
+                
+                <!-- Main 4 Recipes -->
+                <a href="https://vm.tiktok.com/ZS9YMvBm6Jaqd-OPZtd/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🥩</div>
+                    <h3>Resep Selat Solo Autentik</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxMHstar/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🥗</div>
+                    <h3>Resep Selat Solo Galantin</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxM93RWm/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🍲</div>
+                    <h3>Resep Selat Solo Daging Kepal</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxMx4hWq/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🥕</div>
+                    <h3>Resep Selat Solo Praktis</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+
+                <!-- New additional recipes from selasarasa -->
+                <a href="https://vt.tiktok.com/ZSxQQDRnh/" target="_blank" class="collection-card reveal">
+                    <div class="icon">✨</div>
+                    <h3>Resep Selat Solo Enak</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQPc93/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🥩</div>
+                    <h3>Resep Selat Solo Bistik</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQ4fsh/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🥬</div>
+                    <h3>Resep Selat Solo Vegan</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQSTj5/" target="_blank" class="collection-card reveal">
+                    <div class="icon">⏱️</div>
+                    <h3>Resep Selat Solo Simple</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQEJ7w/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🍗</div>
+                    <h3>Resep Selat Solo Ayam</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=AxcP999pRrU" target="_blank" class="collection-card reveal">
+                    <div class="icon">▶️</div>
+                    <h3>Resep Video Selat Solo (YouTube)</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQ9Vdd/" target="_blank" class="collection-card reveal">
+                    <div class="icon">👑</div>
+                    <h3>Resep Selat Solo Legendaris</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQXTGy/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🍳</div>
+                    <h3>Resep Selat Solo Mudah</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQP4kE/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🥩</div>
+                    <h3>Resep Selat Solo Daging</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQbF1S/" target="_blank" class="collection-card reveal">
+                    <div class="icon">💚</div>
+                    <h3>Resep Selat Solo Sehat Nikmat</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQymUB/" target="_blank" class="collection-card reveal">
+                    <div class="icon">🧂</div>
+                    <h3>Resep Selat Solo Royco</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+                <a href="https://vt.tiktok.com/ZSxQQTg9w/" target="_blank" class="collection-card reveal">
+                    <div class="icon">⭐</div>
+                    <h3>Resep Selat Solo Klasik</h3>
+                    <span class="btn-play">Tonton Video</span>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2026 Selat Solo Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
