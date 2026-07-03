@@ -46,7 +46,8 @@ body {
 .cursor {
     width: 20px;
     height: 20px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -56,8 +57,9 @@ body {
     mix-blend-mode: difference;
 }
 .cursor.active {
-    transform: translate(-50%, -50%) scale(2);
-    background-color: rgba(140, 91, 54, 0.2);
+    transform: translate(-50%, -50%) scale(2.5);
+    background-color: transparent;
+    border-width: 1px;
 }
 
 /* Typography */

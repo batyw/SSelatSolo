@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Abstrak - Selat Solo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            /* Latar belakang gelap agar lebih fokus saat membaca dokumen terang */
+            background-image: none;
+            background-color: var(--primary-dark); /* warna cokelat gelap */
+            color: var(--white);
+        }
+        .pdf-container {
+            margin-top: 100px; /* Space for navbar */
+            padding: 2rem 0;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pdf-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            height: 85vh;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(140, 106, 70, 0.2);
+            position: relative;
+        }
+        .pdf-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .back-btn {
+            margin-bottom: 2rem;
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            color: var(--white);
+            transform: translateX(-5px);
+        }
+        h1 {
+            color: var(--accent-color) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor"></div>
+
+    <nav class="navbar scrolled always-scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="color: var(--primary-dark);">Selat Solo</a>
+            <ul class="nav-links">
+                <li><a href="index.html#beranda" style="color: var(--text-dark);">Beranda</a></li>
+                <li><a href="index.html#abstrak" style="color: var(--text-dark);">Kembali</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar" style="background-color: var(--text-dark);"></span>
+                <span class="bar" style="background-color: var(--text-dark);"></span>
+                <span class="bar" style="background-color: var(--text-dark);"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="pdf-container container">
+            <a href="index.html" class="back-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Kembali ke Beranda
+            </a>
+            <h1 style="font-family: var(--font-serif); color: var(--primary-dark); margin-bottom: 1.5rem; text-align: center;">Kumpulan Abstrak Penelitian Selat Solo</h1>
+            
+            <div class="pdf-wrapper">
+                <iframe src="https://drive.google.com/file/d/1L-oakiqchXMdupYVbYcgyyoKM3ks-gNw/preview" allow="autoplay" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h2>Selat Solo</h2>
+                <p>Kenali, Cicipi, & Cintai warisan budaya bangsa.</p>
+                <p class="copyright">Dibuat dengan <svg width="14" height="14" viewBox="0 0 24 24" fill="#ff4d4d" stroke="#ff4d4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px; margin: 0 2px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> oleh Kelompok 5 KUI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
