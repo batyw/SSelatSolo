@@ -32,7 +32,11 @@ body {
     font-family: var(--font-main);
     color: var(--text-dark);
     background-color: var(--bg-color);
-    background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100" height="100" filter="url(%23noise)" opacity="0.05"/%3E%3C/svg%3E'); /* Subtle texture */
+    /* Radial gradient for depth + Subtle Batik Kawung-style / classic pattern overlay */
+    background-image: 
+        radial-gradient(circle at 50% 10%, rgba(255, 248, 235, 0.95) 0%, rgba(230, 218, 195, 0.9) 100%),
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238c6a46' fill-opacity='0.08'%3E%3Cpath d='M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40zm0-4c19.882 0 36-16.118 36-36S59.882 4 40 4 4 20.118 4 40s16.118 36 36 36zM40 60c11.046 0 20-8.954 20-20s-8.954-20-20-20-20 8.954-20 20 8.954 20 20 20zm0-4c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
     line-height: 1.6;
     overflow-x: hidden;
     cursor: none; /* Custom cursor */
@@ -76,6 +80,30 @@ a { text-decoration: none; color: inherit; cursor: none; }
 
 .section {
     padding: 6rem 0;
+    position: relative;
+}
+
+.section.recipe {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.section.recipe::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -50px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.section.recommendations {
+    background: linear-gradient(to bottom, rgba(250,245,235,0.3) 0%, rgba(230,218,195,0.4) 100%);
+}
+.section.abstract {
+    background: linear-gradient(to top, rgba(255,255,255,0.5) 0%, rgba(230,218,195,0.2) 100%);
 }
 
 .section-header {
