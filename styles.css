@@ -623,7 +623,8 @@ footer {
         left: -100%;
         top: 0;
         flex-direction: column;
-        background-color: var(--white);
+        background-color: rgba(250, 245, 235, 0.85); /* Semi-transparent */
+        backdrop-filter: blur(15px); /* Glass effect */
         width: 100%;
         height: 100vh;
         justify-content: center;

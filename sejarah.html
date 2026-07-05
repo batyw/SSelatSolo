@@ -9,7 +9,10 @@
     <style>
         .page-header {
             padding: 150px 0 50px;
-            background: linear-gradient(rgba(42, 26, 13, 0.8), rgba(42, 26, 13, 0.9)), url('images/selat_solo_history.png') center/cover no-repeat fixed;
+            background-image: linear-gradient(rgba(42, 26, 13, 0.8), rgba(42, 26, 13, 0.9)), url('images/selat_solo_history.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: var(--white);
             text-align: center;
             position: relative;
@@ -138,7 +141,7 @@
 
     <main class="article-content">
         <div class="container">
-            <div class="article-body reveal">
+            <div class="article-body fade-in">
                 
                 <h3>Keraton Surakarta sebagai Awal Perkembangan Selat Solo</h3>
                 <p>Selat Solo diyakini berkembang pertama kali di lingkungan Keraton Surakarta pada masa kolonial Belanda. Hubungan yang erat antara Keraton Surakarta dengan pemerintah kolonial membuka peluang terjadinya pertukaran budaya, termasuk dalam bidang kuliner. Berbagai hidangan bergaya Eropa mulai diperkenalkan dan disajikan dalam jamuan resmi keraton. Dalam proses tersebut, masyarakat lokal, khususnya para juru masak pribumi, mulai mempelajari teknik memasak dan penyajian makanan Barat. Dari proses inilah Selat Solo berkembang sebagai salah satu hidangan khas yang kemudian dikenal luas oleh masyarakat Surakarta.</p>
@@ -196,8 +199,13 @@
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <p class="copyright">&copy; 2026 Selat Solo Explorer. All rights reserved.</p>
+            <div class="footer-content fade-in">
+                <h2>Selat Solo</h2>
+                <p style="opacity: 0.8; max-width: 500px; margin: 0 auto;">Merawat tradisi, melestarikan sejarah, dan menikmati harmoni rasa yang telah diwariskan dari generasi ke generasi.</p>
+                <div class="copyright">
+                    <p>&copy; 2026 KUI Kelompok 5 - Eksplorasi Selat Solo.</p>
+                    <p>Didesain dengan Cinta & AI.</p>
+                </div>
             </div>
         </div>
     </footer>
