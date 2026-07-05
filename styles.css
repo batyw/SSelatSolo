@@ -675,10 +675,18 @@ footer {
         justify-content: center;
         align-items: center;
         transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        gap: 3rem !important;
+        gap: 2rem !important;
     }
     .nav-links.active { left: 0; }
     .nav-links a { color: var(--text-dark); font-size: 1.5rem; }
+    
+    /* Force Translate Widget colors on mobile menu */
+    .goog-te-gadget-simple {
+        border-color: var(--primary-color) !important;
+    }
+    .goog-te-gadget-simple .goog-te-menu-value {
+        color: var(--primary-dark) !important;
+    }
     .hamburger { display: block; z-index: 1001; }
     .hamburger.active .bar:nth-child(2) { opacity: 0; }
     .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); background: var(--text-dark);}
