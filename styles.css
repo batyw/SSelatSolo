@@ -62,6 +62,24 @@ body {
     border-width: 1px;
 }
 
+/* Google Translate Widget Styling */
+#google_translate_element {
+    margin-left: 10px;
+}
+#google_translate_element select {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: var(--font-main);
+    cursor: pointer;
+    outline: none;
+    font-size: 0.8rem;
+}
+.skiptranslate iframe { display: none !important; }
+body { top: 0 !important; }
+
 /* Typography */
 h1, h2, h3 {
     font-family: var(--font-serif);
