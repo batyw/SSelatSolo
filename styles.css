@@ -26,6 +26,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -612,6 +613,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .navbar {
+        background: rgba(250, 245, 235, 0.98);
+        padding: 1rem 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
     .nav-links {
         position: fixed;
         left: -100%;
