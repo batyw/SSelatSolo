@@ -622,13 +622,13 @@ footer {
         left: -100%;
         top: 0;
         flex-direction: column;
-        background-color: rgba(250, 245, 235, 0.85); /* Semi-transparent */
-        backdrop-filter: blur(15px); /* Glass effect */
+        background-color: var(--bg-color) !important;
         width: 100%;
         height: 100vh;
         justify-content: center;
         align-items: center;
-        transition: 0.3s;
+        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        gap: 3rem !important;
     }
     .nav-links.active { left: 0; }
     .nav-links a { color: var(--text-dark); font-size: 1.5rem; }
