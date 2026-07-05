@@ -33,10 +33,9 @@ body {
     font-family: var(--font-main);
     color: var(--text-dark);
     background-color: var(--bg-color);
-    /* Radial gradient for depth + Subtle Batik Kawung-style / classic pattern overlay */
-    background-image: 
-        radial-gradient(circle at 50% 10%, rgba(255, 248, 235, 0.95) 0%, rgba(230, 218, 195, 0.9) 100%),
-        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238c6a46' fill-opacity='0.08'%3E%3Cpath d='M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40zm0-4c19.882 0 36-16.118 36-36S59.882 4 40 4 4 20.118 4 40s16.118 36 36 36zM40 60c11.046 0 20-8.954 20-20s-8.954-20-20-20-20 8.954-20 20 8.954 20 20 20zm0-4c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url('images/vintage_batik_bg.png');
+    background-size: repeat;
+    background-position: top left;
     background-attachment: fixed;
     line-height: 1.6;
     overflow-x: hidden;
