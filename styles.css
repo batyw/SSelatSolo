@@ -65,18 +65,47 @@ body {
 /* Google Translate Widget Styling */
 #google_translate_element {
     margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
-#google_translate_element select {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    border: 1px solid var(--accent-color);
-    border-radius: 20px;
-    padding: 5px 10px;
-    font-family: var(--font-main);
+.goog-te-gadget-simple {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 20px !important;
+    padding: 5px 15px !important;
+    display: flex !important;
+    align-items: center;
     cursor: pointer;
-    outline: none;
-    font-size: 0.8rem;
+    transition: var(--transition);
 }
+.goog-te-gadget-icon {
+    display: none !important; /* Hides the Google G logo */
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: var(--text-light) !important;
+    font-family: var(--font-main) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.goog-te-gadget-simple .goog-te-menu-value span {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(3) {
+    border-left: none !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(5) {
+    display: none !important;
+}
+
+/* Scrolled Navbar State */
+.navbar.scrolled .goog-te-gadget-simple {
+    border-color: var(--primary-color) !important;
+}
+.navbar.scrolled .goog-te-gadget-simple .goog-te-menu-value {
+    color: var(--primary-dark) !important;
+}
+
 .skiptranslate iframe { display: none !important; }
 body { top: 0 !important; }
 
